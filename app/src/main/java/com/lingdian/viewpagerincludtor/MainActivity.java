@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private View srcollBarView;
     private int currentPosition = 0;
     private ViewPager viewPager;
+    private ScrollBarView view_scroll_bar;
 
 
     @Override
@@ -31,12 +32,15 @@ public class MainActivity extends AppCompatActivity {
         myOffset=(itemWidth / 2 - BarItemWidth / 2);
 
         setContentView(R.layout.activity_main);
+
+        view_scroll_bar=findViewById(R.id.view_scroll_bar);
+
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         srcollBarView = findViewById(R.id.view_scroll_bar);
 
         viewPager.setOffscreenPageLimit(3);
         viewPager.setCurrentItem(0);
-        viewPager.addOnPageChangeListener(viewPagerListener);
+        viewPager.addOnPageChangeListener(view_scroll_bar);
         init();
     }
 
@@ -53,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         viewList.add(view3);
         MyPagerAdapter pagerAdapter = new MyPagerAdapter(viewList);
         viewPager.setAdapter(pagerAdapter);
-        getScrollPosition(0, 0);
     }
 
     private void getScrollPosition(int position, int offset) {

@@ -34,16 +34,27 @@
            android:layout_width="0dp"
            android:layout_height="match_parent" />
    </LinearLayout>
-    <LinearLayout
+
+    <com.lingdian.viewpagerincludtor.ScrollBarView
+        android:id="@+id/view_scroll_bar"
+        app:barColor="#2bb5ef"
+        app:barHeight="3dp"
+        app:barWidth="22dp"
+        app:itemNum="3"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <View
-            android:id="@+id/view_scroll_bar"
-            android:layout_width="22dp"
-            android:layout_height="3dp"
-            android:background="#2bb5ef" />
-    </LinearLayout>
+        android:layout_height="wrap_content"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<View-->
+            <!--android:id="@+id/view_scroll_bar"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="3dp"-->
+            <!--android:background="#2bb5ef" />-->
+    <!--</LinearLayout>-->
 </RelativeLayout>
 
     <android.support.v4.view.ViewPager

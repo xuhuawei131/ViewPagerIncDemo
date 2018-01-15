@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollBarView">
+
+        <!-- 百分号的颜色 -->
+        <attr name="barColor" format="color" />
+        <attr name="barDrawable" format="reference|color" />
+
+        <!-- 背景圆的颜色 -->
+        <attr name="barWidth" format="dimension"/>
+        <!-- 进度条的颜色 -->
+        <attr name="barHeight" format="dimension"/>
+        <attr name="itemNum" format="integer"/>
+
+    </declare-styleable>
+
+
+</resources>
